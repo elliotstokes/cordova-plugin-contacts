@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-contacts",
+  "name": "cordova-plugin-contacts-filtered",
   "version": "0.2.17-dev",
-  "description": "Cordova Contacts Plugin",
+  "description": "Cordova Contacts Plugin Filtered",
   "cordova": {
-    "id": "org.apache.cordova.contacts",
+    "id": "org.elliot.cordova.contacts",
     "platforms": [
       "android",
       "amazon-fireos",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-contacts.git"
+    "url": "https://github.com/elliotstokes/cordova-plugin-contacts.git"
   },
   "keywords": [
     "cordova",
