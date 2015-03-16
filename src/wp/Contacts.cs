@@ -571,11 +571,17 @@ namespace WPCordovaClassLib.Cordova.Commands
                 foundContacts = new List<Contact>(e.Results);
             }
 
+
+
             string strResult = "";
 
             IEnumerable<Contact> distinctContacts = foundContacts.Distinct();
 
-            foreach (Contact contact in distinctContacts)
+            var filteredResults = from c in distinctContacts
+                         where c.PhoneNumbers.Count() > 0
+                         select c;
+
+            foreach (Contact contact in filteredResults)
             {
                 strResult += contact.ToJson(searchParams.options.desiredFields) + ",";
 
